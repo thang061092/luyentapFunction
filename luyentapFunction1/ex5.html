@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star =['Polaris', 'Aldebaran',' Deneb', 'Vega', 'Altair', 'Dubhe','Regulus'];
+    let Constellation= ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo'];
+    function findStar(N) {
+        for (let i = 0; i < star.length; i++) {
+            if (N == star[i]) {
+                flag = true;
+                alert(Constellation[i]);
+            }
+        }
+        if(flag == false){
+            alert('không tìm thấy');
+        }
+
+    }
+    let X = prompt("nhap chom sao muon tim");
+    findStar(X);
+</script>
+</body>
+</html>
