@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    array(arr);
+    reverse(arr);
+    document.write(arr);
+
+    function array(number) {
+        let N = +prompt("nhap do dai cua mang");
+        for (let i = 0; i < N; i++) {
+            number[i] = +prompt("nhap phan tu thu " + i + "cua mang");
+        }
+    }
+
+    function reverse(num) {
+        let first = 0;
+        let last = num.length - 1;
+        while (first < last) {
+            let a = num[first];
+            num[first] = num[last];
+            num[last] = a;
+            first++;
+            last--;
+        }
+    }
+</script>
+</body>
+</html>
